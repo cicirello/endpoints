@@ -15,6 +15,7 @@ jobs:
     - name: Generate user count JSON endpoints
       uses: cicirello/count-action-users@v1
       with:
+        query-delay: 65
         action-list: >
           cicirello/jacoco-badge-generator
           cicirello/generate-sitemap
