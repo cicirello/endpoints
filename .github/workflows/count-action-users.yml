@@ -16,6 +16,7 @@ jobs:
       uses: cicirello/count-action-users@v1
       with:
         query-delay: 65
+        color: '#007ec6' # The blue used by Shields for "informational"
         action-list: >
           cicirello/jacoco-badge-generator
           cicirello/generate-sitemap
