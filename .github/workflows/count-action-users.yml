@@ -1,8 +1,6 @@
 name: count-action-users
 
 on:
-  schedule:
-    - cron: '22 7 * * *'
   workflow_dispatch:
 
 jobs:
