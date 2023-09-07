@@ -14,10 +14,18 @@ jobs:
       uses: cicirello/count-action-users@main
       with:
         action-list: >
-          #cicirello/jacoco-badge-generator
-          cicirello/generate-sitemap
-          #cicirello/javadoc-cleanup
-          #cicirello/user-statistician
-          #cicirello/count-action-users		  
+          cicirello/generate-sitemap		  
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+    #- name: Generate user count JSON endpoints
+    #  uses: cicirello/count-action-users@main
+    #  with:
+    #    action-list: >
+    #      cicirello/jacoco-badge-generator
+    #      cicirello/generate-sitemap
+    #      cicirello/javadoc-cleanup
+    #      cicirello/user-statistician
+    #      cicirello/count-action-users		  
+    #  env:
+    #    GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
