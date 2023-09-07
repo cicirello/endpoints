@@ -11,13 +11,13 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Generate user count JSON endpoints
-      uses: cicirello/count-action-users@v1
+      uses: cicirello/count-action-users@main
       with:
         action-list: >
-          cicirello/jacoco-badge-generator
+          #cicirello/jacoco-badge-generator
           cicirello/generate-sitemap
-          cicirello/javadoc-cleanup
-          cicirello/user-statistician
-          cicirello/count-action-users		  
+          #cicirello/javadoc-cleanup
+          #cicirello/user-statistician
+          #cicirello/count-action-users		  
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
